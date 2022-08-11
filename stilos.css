@@ -1,0 +1,714 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "helvetica-neue",  Helvetica, sans-serif;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-weight: 900;
+}
+
+
+
+
+@media (max-width: 768px){
+    div.img-area{
+        height: 70vh;
+        width: 100vw;
+        background-image: url(gas.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;
+        transition: all 0.5 ease;
+        animation: banner1 20s ease infinite;
+   }
+   
+   @keyframes  banner1{
+       0%{
+        opacity: 0.5;
+       }
+       50%{
+           opacity: 1;
+       }
+   }
+    .topo{
+    
+        background-color: chocolate;
+        height: 70px;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        color: white;
+        font-size: 1rem;
+        padding: 0 2rem;
+        border-bottom: 2px solid white;
+        z-index: 4000;
+    }
+    header{
+        width: 50vw;
+        box-sizing: border-box;
+        position: absolute;
+        box-sizing: border-box;
+        background-color:white;
+        mix-blend-mode: screen;
+        padding: 20px 10px;
+        margin-top: 70px;
+        font-size: 14px;    
+}
+header h1{
+    box-sizing: border-box;
+     font-size: 3.7em;
+     font-weight: 800;
+     text-align: center;
+ }
+ .topo .nav li{
+     display: inline-block;
+     padding: 5px 10px;
+     z-index: 4000;
+
+ }
+ nav.menu{
+    display: none;
+
+ }
+ .topo .nav a{
+     color: white;
+ }
+ main{
+    box-sizing: border-box;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+
+}
+main h3{
+   padding: 1rem;
+   text-align: center;
+   font-size: 1.5rem;
+}
+main div#home p{
+   box-sizing: border-box;
+   padding-top: 1.2rem;
+   font-size: 1.3rem;
+   text-align: justify;
+   letter-spacing: 0px;
+   font-weight: 100;
+   line-height: 1.5rem;
+}
+.store a{
+    display: inline;
+    flex-direction: row;
+    text-align: center !important;
+    font-size: 1.1REM;
+    margin-bottom: 15px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    padding: 5px 20px; 
+    background-color: coral; 
+    color: white; 
+}
+.store img{
+    width: 48%;
+}
+.store div{
+    display: none;
+}
+.store div:target{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+}
+.store div:target a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-emphasis: center;
+    margin-top: 20px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+
+span#ho:hover{
+    position: relative;
+}
+span#ho:hover::after{
+    position: absolute;
+   
+}
+span#ho:hover::after{
+    content: url("imagens\k6.jpg");
+    left: 0;
+    top: 20px;
+}
+
+ 
+}    
+
+
+
+@media (max-width: 420px){
+    html{
+    font-size: 62,5%;
+}
+.nav{
+    display: none;
+}
+
+    
+ div.img-area{
+     height: 100vh;
+     width: 100vw;
+     background-image: url(gas.png);
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     box-sizing: border-box;
+     transition: all 0.5 ease;
+
+     animation: banner 10s  alternate infinite;
+     
+ }
+ @keyframes banner{
+    25%{
+        
+        background-image: url(viatura_01.png);
+        
+    }
+    50%{
+        background-image: url(gas.jpg);
+    }
+    75%{
+        background-image: url(viatura_01small.jpg);
+    }
+    
+ }
+ 
+ .one,
+.twoo,
+.three{
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    
+    margin: 5px auto;
+    
+}
+.menu-toggle{
+    width: 40px;
+    height: 30px;
+}
+
+ header{
+     width: 100vw;
+     box-sizing: border-box;
+     position: relative;
+     box-sizing: border-box;
+     background-color: white;
+     mix-blend-mode: screen;
+     padding: 40px 20px;
+     margin-top: 70px;
+     font-size: 14px;
+
+ }
+ header h1{
+    box-sizing: border-box;
+     font-size: 5rem;
+     font-weight: 800;
+ }
+ header h3{
+     margin-bottom: 20px;
+     font-weight: 700;
+ }
+ #marca{
+     font-size: 3rem;
+     font-weight: 800;
+ }
+ .topo{
+     overflow: hidden;
+     background-color: darkslateblue;
+     height: 50px;
+     width: 100vw;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     box-sizing: border-box;
+     position: fixed;
+     top: 0;
+     left: 0;
+     color: white;
+     font-size: 1.2em;
+     padding: 0 2rem;
+     z-index: 2000;
+ }
+ .topo i{
+     align-items: center;
+ }
+ nav.menu{
+     overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    background-color: darkslateblue;
+    opacity: 0.8;
+    text-align: center;
+    transform: translateY(-300px);
+    transition: transform 1s ease;
+    
+ }
+ nav.menu.on{
+    transform: translateY(0px);
+    position: fixed;
+    z-index: 1999;
+ }
+ 
+ nav li{
+
+     border-bottom: 1px solid #111;
+ }
+ nav a{
+     line-height: 3.5rem;
+     color: white;
+     font-size: 1.2em;
+     display: block;
+
+ }
+ a:hover{
+     background-color: rgba(38, 113, 184);
+     color: rgb(6, 55, 100);
+     font-weight: 800;
+ }
+ main{
+     box-sizing: border-box;
+     width: 85%;
+     margin: 0 auto;
+     background-color: #f5f5f5;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     padding: 0.5rem;
+}
+main h3{
+    padding: 1rem;
+    text-align: center;
+}
+main div#home p{
+    box-sizing: border-box;
+    padding-top: 0.5rem;
+    text-align: justify;
+    letter-spacing: 0px;
+    font-weight: 100;
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+main div#home p b{
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+/*-----alterar conteudo--------*/
+section.store a{
+    display: block;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 15px;   
+}
+.store img{
+    width: 100%;
+}
+.store div{
+    display: none;
+}
+.store div:target{
+    display: block;
+    margin-top: 1rem;
+}
+/*------------------------------*/
+/*----------secao bilhas INICIO--------------------*/
+span#ho:hover{
+    position: relative;
+}
+span#ho:hover::after{
+    position: absolute;
+   
+}
+span#ho:hover::after{
+    content: url("k6.jpg");
+    left: 0;
+    top: 20px;
+}
+ section{
+     position: relative;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 2.2;
+    background-color: #f5f5f5;
+    border: 0px;
+    
+}
+section#inicio ul {
+    display: inline-block;
+    padding: 2rem 0rem;
+    margin-left: -5px;
+}
+section#inicio article{
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 15px solid white;
+}
+
+
+section#inicio li {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    font-size: 90%;
+    font-weight: 100;
+    color:lightslategrey;
+    align-items: baseline;
+}
+section#inicio li b{
+ 
+    color: darkslateblue;
+    font-weight: bold;
+}
+section#inicio li span{
+    line-height: 1;
+}
+section#inicio article p.rodape{
+    position: absolute;
+    top: 222px;
+    left: 40px;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: lightslategrey;
+
+}
+section#inicio article p.rodape1{
+    position:absolute;
+    top: 232px;
+    left: 40px;
+    font-size: 0.62rem;
+    color: lightslategrey;
+}
+section#inicio article .botija{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 50;
+    background-color: darkslateblue;
+    transition: transform 1s ease;
+    
+}
+section#inicio article .botija img{
+    width: 47%;
+    object-fit: cover;
+    filter: drop-shadow(3px 1px 7px #000)
+}
+section#inicio article:hover .botija{
+    transform: scale(0);
+    -moz-transform: scale(0);
+}
+#k11{
+    margin-left: 30px;
+}
+#b45{
+    filter: none !important;
+    margin-left: -35px !important;
+}
+#k6 img{
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+/*---------secao bilhas FIM-------------*/
+section#ondeEstamos{
+    margin: 0 auto;
+}
+
+section#ondeEstamos div{
+    box-sizing: border-box;
+    padding: 5px 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: darkslateblue;
+}
+section#ondeEstamos div h3{
+    padding: 10px 0;
+}
+div.form form{
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px double white;
+}
+s
+section#ondeEstamos .iframe{
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+section#ondeEstamos .form div input{
+    width: 15rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+section#ondeEstamos div label{
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+input:focus{
+    background: lightgray;
+}
+textarea:focus{
+    background: lightgray;
+}
+br{
+    margin: 0;
+}
+form input[type="submit"]{
+    padding: 155px 0;
+    font-size: 1.3rem;
+    background-color: rgb(46, 46, 85);
+    color: white;
+    border: 1px solid white;
+}
+div#servicos{
+    margin-top: 0px;
+    padding: 15px;
+    
+}
+div#servicos h3{
+    display: inline;
+    background-color: coral;
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+ul.itens{
+    display: block;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+ul.itens li{
+    list-style: disc !important;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 100;
+}
+div#servicos p{
+    color: red;
+}
+section.duvidas{
+    box-sizing: border-box;
+    padding: 10px;
+}
+section.duvidas h3{
+
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+#esclarecimentos h4{
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+#esclarecimentos p{
+    line-height: 1.3;
+    text-align: justify;
+    font-weight: 100;
+    letter-spacing: ;
+}
+
+
+section a{
+    display: inline;
+    padding: 5px 15px;
+    border: 1px solid blue;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 30px;   
+}
+
+.duvidas div{
+    display: none;
+}
+.duvidas div:target{
+    display: block;
+    margin-top: 2rem;
+}
+.tel{
+    display: block;
+    border: none;
+    border-radius: 0;
+    background: white;
+    line-height: 1.2;
+    margin: 0;
+    font-size: 1.2rem;
+}
+footer{
+    background-color: darkslateblue;
+    width: 100vw;
+}
+footer section{
+    background-color: darkslateblue;
+    color: white;
+    padding: 5px;
+    padding-top: 20px;
+}
+.morada{
+   font-weight: 100;
+   line-height: 1.19rem;
+
+}
+.telefones{
+    font-weight: 100;
+    line-height: 1.19rem;
+}
+.email a{
+   color: white;
+   border: 0;
+   border-radius: 0;
+   padding: 0;
+   font-weight: 100;
+}
+.direitos{
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+section#inicio li:nth-last-of-type(){
+    border: 0px;
+}
+
+   
+        
+    
+}
+@media (max-width: 354px){
+    header{
+        width: 100vw;
+    }
+    header h1{
+        font-size: 2.5rem;
+    } 
+    main h3{
+        font-size: 0.9rem;
+    }
+    main div#home p{
+        font-size: 90%;
+        margin-bottom: 0.5rem;
+    }
+    section#inicio li{
+        border-bottom: 1px solid lightgrey;
+        font-size: 70%;
+    
+    }
+    section#inicio article p.rodape{
+        position:absolute;
+        top: 180px;
+        font-size: 0.55rem;
+        text-transform: uppercase;
+        color: lightslategrey;
+    }
+    section#inicio article p.rodape1{
+        position:absolute;
+        top: 190px;
+        left: 40px;
+        font-size: 0.55rem;
+        color: lightslategrey;
+    }
+    .botija img{
+        margin-top: 10px;
+        width: 150px !important;
+        height: 195px;
+    }
+    #b45{
+        filter: none !important;
+        margin-left: -20px !important;
+    }
+    .botija #k11{
+        margin-left: 30px !important;
+    }
+    #k6{
+        margin-top: 30px;
+        width: 120px !important;
+        height: 150px;
+    }
+    .botija h3{
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+    
+
+
+
+

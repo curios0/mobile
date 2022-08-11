@@ -1,0 +1,15 @@
+@media (max-width: 768){
+    .img-area header{
+        width: 100%;
+        height: 100vh;
+        }
+    nav.menu{
+        width: 100vw;
+        display: inline-block;
+    }
+    h1{
+        color: red;
+    }
+ }
+
+ 
