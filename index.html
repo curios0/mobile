@@ -13,7 +13,7 @@
             
             <div class="topo">
                 
-                    <i class="far fa-bars">Menu</i>
+                    <i class="far fa-bars" onclick="abrir()" >Menu</i>
 
                     <div class="menu-section">
                     <div class="menu-toggle">
@@ -383,10 +383,12 @@
         </section>
     </footer>
     <script>
-        var btn = document.querySelector('.menu-toggle')
-        var menu= document.querySelector('.menu')
-            menu.style.display="none"
-        btn.addEventListener("click", () => menu.classList.toggle("on"))
+        function abrir(){
+          if(nav.style.display=="block"){
+                  nav.style.display="none"
+            }else{
+                  nav.style.display="block"
+                  }
     </script>
 </body>
 </html>
