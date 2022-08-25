@@ -177,7 +177,7 @@ span#ho:hover::after{
     font-size: 62,5%;
 }
 .nav{
-    display: none;
+    display: block;
 }
 
     
